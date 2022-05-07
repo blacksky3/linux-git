@@ -56,7 +56,7 @@ done
 pkgver=5.18
 pkgrel=1
 major=5.18
-commit=249aca0d3d631660aa3583c6a3559b75b6e971b4
+commit=4b97bac0756a81cda5afd45417a99b5bccdcff67
 arch=(x86_64)
 url='https://www.kernel.org/'
 license=(GPL2)
@@ -71,7 +71,7 @@ patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/5.17
 
 source=(git+https://github.com/torvalds/linux.git#commit=$commit
         ${archlinuxpath}/config
-        https://raw.githubusercontent.com/blacksky3/patches/main/misc/0001-remove-dirty.patch
+        https://raw.githubusercontent.com/blacksky3/patches/main/misc/0001-remove-git-version.patch
         # Arch patches
         ${patchpath}/arch/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
         # Block patches. Set BFQ as default
@@ -508,7 +508,7 @@ _package-headers(){
 
 sha256sums=('SKIP'
             'c0ef360e34fd21c23509224abae894b0d6d37256cccf82575062a05986ee5dba'
-            '14a2116e68d3e5ea71ecf5197e895e1bb844a99b888d40128d5932e294a30cb2'
+            '0849adf94674f8782c4712e2caa18578846aff12ca4232f6741ccdc4e61d2597'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
             '4d385d6a7f7fd9f9aba19d5c24c24814e1af370ff245c8dc98b03482a27cb257'
             'a043e4c393395e6ad50d35c973fa0952f5deb109aee8a23103e24297c027641e'
