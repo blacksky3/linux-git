@@ -56,7 +56,7 @@ done
 pkgver=5.18
 pkgrel=1
 major=5.18
-commit=4b97bac0756a81cda5afd45417a99b5bccdcff67
+commit=9be9ed2612b5aedb52a2c240edb1630b6b743cb6
 arch=(x86_64)
 url='https://www.kernel.org/'
 license=(GPL2)
@@ -66,7 +66,7 @@ if [[ "$_compiler" = "2" ]]; then
 fi
 options=(!strip)
 
-archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/a2a724a2d34d9d055359d79b4babc9d329778978/trunk
+archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/dd8df6d5d303466bf3c675bce0bf8525c6cc775c/trunk
 patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/5.17
 
 source=(git+https://github.com/torvalds/linux.git#commit=$commit
@@ -507,7 +507,7 @@ _package-headers(){
 }
 
 sha256sums=('SKIP'
-            'c0ef360e34fd21c23509224abae894b0d6d37256cccf82575062a05986ee5dba'
+            '718abbbc528f1ea6db31b05c4fd00467c23bfefa678dfc32cff482725c26b730'
             '0849adf94674f8782c4712e2caa18578846aff12ca4232f6741ccdc4e61d2597'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
             '4d385d6a7f7fd9f9aba19d5c24c24814e1af370ff245c8dc98b03482a27cb257'
