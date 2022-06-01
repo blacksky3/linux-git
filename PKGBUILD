@@ -53,10 +53,10 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
-pkgver=5.18
+pkgver=5.18.r1102414.g700170bf6b4d
 pkgrel=1
 major=5.18
-commit=ef1302160bfb19f804451d0e919266703501c875
+commit=700170bf6b4d773e328fa54ebb70ba444007c702
 arch=(x86_64)
 url='https://www.kernel.org/'
 license=(GPL2)
@@ -66,8 +66,8 @@ if [[ "$_compiler" = "2" ]]; then
 fi
 options=(!strip)
 
-archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/c0019a07879d922a9dcce49c27431902e4f4b783/trunk
-patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/5.17
+archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/34de6c127cc0056bcdb01e3351261276ffbccb71/trunk
+patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/5.18
 
 source=(git+https://github.com/torvalds/linux.git#commit=$commit
         ${archlinuxpath}/config
@@ -392,7 +392,7 @@ build(){
 }
 
 _package(){
-  pkgdesc='The Linux kernel and modules with Arch, Block, CPU, Futex and kernel_compiler_patch patch'
+  pkgdesc='The Linux kernel and modules with Arch, Block, CPU, Futex, and kernel_compiler_patch patch'
   depends=(coreutils kmod initramfs)
   optdepends=('wireless-regdb: to set the correct wireless channels of your country'
               'linux-firmware: firmware images needed for some devices')
@@ -507,15 +507,15 @@ _package-headers(){
 }
 
 sha256sums=('SKIP'
-            'fb37785c43d90085ab4e7d7cee522cb8232713b6c601d74cfc7234eeaeb1e6b5'
+            '5e34f17f45b3623bd8350b4d2c23ad7525b75c327cc49ec3dc37e3ee168d2f46'
             '0849adf94674f8782c4712e2caa18578846aff12ca4232f6741ccdc4e61d2597'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
-            '4d385d6a7f7fd9f9aba19d5c24c24814e1af370ff245c8dc98b03482a27cb257'
-            'a043e4c393395e6ad50d35c973fa0952f5deb109aee8a23103e24297c027641e'
-            '3a02c7382d4d490e16a6132fcba89004f73044c34daf65906c1f823d2ab25aeb'
-            '6978a2010c3a2dd7bec1260e3f1e0f9d6ebc032664cdd917847f352e58ba2870'
-            'b5ff6f189a83472b737965e0412ca401af4bc539b308e0d9bfa403294e6795e0'
-            '74546291433f8e79c9c960075edbd7974d715818b1be6c982308adf93e9e9c4f'
-            '7bf85364c3876a648b542ba5a5ada801181183b29366408ef2b2971edab0bd4c'
-            '5f6906d9f8c1bd9b30486eba07f2c03ca1849cc5c6a990127ebd81c6e105ac45'
+            '9c0e1dea6f645eee9b09cf7d264b17f00f636bdda35c93d354562dda0d674005'
+            'ba63855b09eb27c4c33b4302560acec739e642ee8122d3c867b9f11deb06bc56'
+            'e4dd2216fc31d0eab68d674cbbce70343f920c5146613e97fe8c3afed3139157'
+            '7a7f9a4d66abe261f35373002e3556b8af7204d155896c2e6d1b55d74a31b5b8'
+            '3829e6f9dd55e5c0ae997d409b15c8784e7584a820c7aa0941d50ed6dffeab31'
+            'cd634fe619625b01584cd01534b23c2d4eca8146c9690205806b0db5d8029906'
+            '26fd09d627f83eb78ecd7e65356731d501b89fbc6cd339018aa1ccd708c4756f'
+            'd1939e9d71df2d1b3bd2c60c26e2f26246f4d8f2a93e131e4ee8d49ba7dfc74f'
             'dea86a521603414a8c7bf9cf1f41090d5d6f8035ce31407449e25964befb1e50')
