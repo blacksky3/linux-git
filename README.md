@@ -1,6 +1,6 @@
 # linux-git
 
-Linux kernel build for Archlinux with Arch, Block, CPU, Futex and kernel_compiler_patch patch.
+Linux kernel build for Archlinux with Arch, Block, CPU, Futex, Wine and kernel_compiler_patch patch.
 
 # Version
 
