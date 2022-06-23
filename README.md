@@ -6,7 +6,7 @@ Linux kernel build for Archlinux with Arch, Block, CPU, Futex and kernel_compile
 
 - 5.19
 
-- commit: 78ca55889a549a9a194c6ec666836329b774ab6d
+- commit: de5c208d533a46a074eb46ea17f672cc005a7269
 
 # Build
 
