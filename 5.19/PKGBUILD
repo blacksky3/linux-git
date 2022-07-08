@@ -56,7 +56,7 @@ done
 pkgver=5.19
 pkgrel=1
 major=5.19
-commit=c1084b6c5620a743f86947caca66d90f24060f56
+commit=525496a030de4ae64bb9e1d6bfc88eec6f5fe6e2
 arch=(x86_64)
 url='https://www.kernel.org/'
 license=(GPL2)
